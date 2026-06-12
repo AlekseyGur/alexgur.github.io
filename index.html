@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+  <title>Aleksey Gurzhiev — Technical Product Manager</title>
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      background-color: #0A0A0A;
+      color: #A8A9AD;
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 400;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      padding: 2rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    a { color: #A8A9AD; text-decoration: none; border-bottom: 1px solid rgba(168, 169, 173, 0.3); transition: border-color 0.2s; }
+    a:hover { border-bottom-color: #A8A9AD; }
+    h1, h2, h3 { color: #ffffff; font-weight: 500; }
+    .container { max-width: 780px; width: 100%; }
+    .header { text-align: center; padding: 3rem 0 2rem; }
+    .avatar {
+      width: 180px;
+      max-width: 40%;
+      height: auto;
+      aspect-ratio: 1 / 1;
+      border-radius: 16px;
+      object-fit: cover;
+      background-color: #1C1C1E;
+      margin-bottom: 1.5rem;
+    }
+    .name { font-size: 2.1rem; letter-spacing: 0.02em; margin-bottom: 0.35rem; }
+    .title { font-size: 1.1rem; color: #A8A9AD; margin-bottom: 0.25rem; }
+    .subtitle { font-size: 0.95rem; color: #7A7B7E; margin-bottom: 1.2rem; }
+    .tagline { font-style: italic; font-size: 1rem; color: #C0C1C4; }
+    .status {
+      font-size: 0.9rem; color: #7A7B7E; margin-top: 1rem;
+      border-top: 1px solid rgba(168,169,173,0.1); padding-top: 1rem;
+    }
+    section { padding: 2.2rem 0; border-top: 1px solid rgba(168, 169, 173, 0.1); }
+    h2 { font-size: 1.5rem; margin-bottom: 1.2rem; }
+    .about p { margin-bottom: 1rem; }
+    .competencies {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.8rem; margin-top: 1.2rem;
+    }
+    .competency h3 { font-size: 1.1rem; margin-bottom: 0.5rem; }
+    .competency p { font-size: 0.9rem; line-height: 1.5; }
+    .book {
+      display: flex; flex-wrap: wrap; gap: 1.8rem; align-items: flex-start;
+      background: #1C1C1E; padding: 1.8rem; border-radius: 12px; margin-top: 1rem;
+    }
+    .book-cover {
+      width: 120px; height: 170px; border-radius: 6px;
+      flex-shrink: 0; display: flex; align-items: center; justify-content: center;
+      overflow: hidden;
+    }
+    .book-cover img { width: 100%; height: 100%; object-fit: cover; }
+    .book-info h3 { font-size: 1.2rem; margin-bottom: 0.5rem; }
+    .book-info .lang { font-size: 0.8rem; color: #7A7B7E; margin-bottom: 0.8rem; }
+    .book-info a { font-weight: 500; }
+    .contacts { display: flex; flex-wrap: wrap; gap: 1.2rem; margin-top: 1.2rem; }
+    .contact-item { display: flex; align-items: center; gap: 0.5rem; }
+    .contact-item span { font-size: 0.95rem; }
+    .cv-button {
+      display: inline-block; margin-top: 1.8rem; padding: 0.8rem 2rem;
+      border: 1px solid #A8A9AD; border-radius: 6px; color: #A8A9AD; font-weight: 500;
+      transition: all 0.2s;
+    }
+    .cv-button:hover { background: #A8A9AD; color: #0A0A0A; border-color: #A8A9AD; }
+    footer { text-align: center; padding: 2rem 0 1rem; font-size: 0.8rem; color: #5A5B5E; }
+    @media (max-width: 600px) {
+      body { padding: 1.2rem 1rem; }
+      .name { font-size: 1.8rem; }
+      .book { flex-direction: column; }
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <img src="/avatar.jpg" alt="Aleksey Gurzhiev" class="avatar">
+      <h1 class="name">Aleksey Gurzhiev</h1>
+      <p class="title">Technical Product Manager</p>
+      <p class="subtitle">FinTech & High‑Load Systems</p>
+      <p class="tagline">“Bridging Engineering &amp; Business”</p>
+      <p class="status">Open to select opportunities worldwide · Currently exploring Dubai (Aug‑Sep 2026) · Fully prepared for relocation</p>
+    </header>
+
+    <section id="about">
+      <h2>About</h2>
+      <div class="about">
+        <p>I am a Technical Product Manager and Systems Architect with 15+ years of deep software engineering roots (Java/Spring, Scala, C/C++, Python). My expertise lies at the intersection of FinTech, algorithmic trading platforms, and high‑load B2B systems where reliability, low latency, and data integrity are non‑negotiable.</p>
+        <p>Unlike traditional Product Managers, I don’t just manage backlogs; I understand system constraints at the architecture level. I bridge the gap between complex engineering realities and scalable business goals. Having architected live front‑office trading systems and exchange software, I know exactly how market data ingestion, signal engines, and order execution pipelines operate under the hood.</p>
+        <p>My analytical foundation allows me to build end‑to‑end data workflows: from event modeling and data marts (ClickHouse, PostgreSQL) to orchestration (Airflow) and visualization (Grafana, Metabase). I run A/B tests, perform cohort analysis, and write production‑grade SQL and Python (pandas, scikit‑learn) daily.</p>
+      </div>
+    </section>
+
+    <section id="expertise">
+      <h2>Core Expertise</h2>
+      <div class="competencies">
+        <div class="competency">
+          <h3>Technical Architecture</h3>
+          <p>High‑load, low‑latency, event‑driven systems. Kafka, Kubernetes, Spring Cloud, microservices. Designing platforms that scale.</p>
+        </div>
+        <div class="competency">
+          <h3>FinTech & Trading</h3>
+          <p>Order books, matching engines, market data ingestion, risk management. Front‑office trading infrastructure.</p>
+        </div>
+        <div class="competency">
+          <h3>Data & Analytics</h3>
+          <p>Big Data pipelines, SQL, Python, A/B testing, BI dashboards. Turning raw data into product decisions.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="book">
+      <h2>Book</h2>
+      <div class="book">
+        <div class="book-cover">
+          <img src="/book.jpg" alt="Book cover: Big Data, Digital Transformation & Machine Learning">
+        </div>
+        <div class="book-info">
+          <h3>Big Data, Digital Transformation & Machine Learning for Business Owners and Executives</h3>
+          <p class="lang">Currently available in Russian · 2023</p>
+          <p>A practical guide for decision‑makers, explaining complex tech in simple terms. Written to help leaders understand how to invest in data without diving into code.</p>
+          <p style="margin-top:0.6rem;">
+            <a href="https://www.litres.ru/book/aleksey-sergeevich-g/bolshie-dannye-cifrovizaciya-i-mashinnoe-obuchenie-dl-70051603/" target="_blank" rel="noopener">View on Litres →</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="contacts">
+        <div class="contact-item"><span>📧</span> <a href="mailto:alexgur.work@gmail.com">alexgur.work@gmail.com</a></div>
+        <div class="contact-item"><span>🌐</span> <a href="https://alexgur.com" target="_blank">alexgur.com</a></div>
+        <div class="contact-item"><span>✈️</span> <a href="https://t.me/alekseygur" target="_blank">@alekseygur</a></div>
+        <div class="contact-item"><span>🔗</span> <a href="https://linkedin.com/in/alexgur" target="_blank">linkedin.com/in/alexgur</a></div>
+        <div class="contact-item"><span>💻</span> <a href="https://github.com/AlekseyGur" target="_blank">github.com/AlekseyGur</a></div>
+      </div>
+      <a href="/alexgur_com_cv.pdf" class="cv-button" download>Download CV</a>
+    </section>
+
+    <footer>
+      © <span id="current-year"></span> Aleksey Gurzhiev. Built with precision.
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
