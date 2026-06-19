@@ -36,7 +36,7 @@
     * { margin: 0; padding: 0; box-sizing: border-box; }
     html { scroll-behavior: smooth; font-size: 16px; }
     body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
       background: var(--color-bg);
       color: var(--color-text);
       line-height: 1.7;
@@ -49,17 +49,19 @@
     /* Hero */
     .hero { text-align: center; padding: 3rem 0 0; }
     .hero-avatar {
-      width: 160px; height: 160px;
+      width: 180px;
       border-radius: var(--shadow-sm);
       object-fit: cover;
       margin: 0 auto 1.5rem;
       box-shadow: var(--shadow-lg);
     }
     .hero-name {
-      font-size: 2.5rem; font-weight: 600;
+      font-size: 2.1rem;
+      font-weight: normal;
       color: var(--color-text-light);
       margin-bottom: 0.5rem;
-      letter-spacing: -0.02em; line-height: 1.2;
+      letter-spacing: 0.02em;
+      line-height: 1.2;
     }
     .hero-title { font-size: 1.25rem; color: var(--color-accent); font-weight: 500; margin-bottom: 0.25rem; }
     .hero-subtitle {
@@ -196,7 +198,7 @@
     @media (max-width: 768px) {
       .container { padding: 1.5rem 1rem; }
       .hero { padding: 2rem 0 1.5rem; }
-      .hero-avatar { width: 120px; height: 120px; }
+      .hero-avatar { width: 140px; }
       .hero-name { font-size: 2rem; }
       .hero-title { font-size: 1.1rem; }
       .section-title { font-size: 1.6rem; }
